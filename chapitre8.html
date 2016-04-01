@@ -56,10 +56,10 @@
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
 
 <form name="QCM">
-<input type="radio" name="choix1" value="rep1"/> reponse 1 </br>
-<input type="radio" name="choix2" value="rep2"/> reponse 2 </br>
-<input type="radio" name="choix3" value="rep3"/> reponse 3 </br>
-<input type="submit" name="submit" value="Valider" onclick="tester(this.form.choix)"/>
+<input type="radio" name="choix" value="rep1"/> reponse 1 </br>
+<input type="radio" name="choix" value="rep2"/> reponse 2 </br>
+<input type="radio" name="choix" value="rep3"/> reponse 3 </br>
+ <button type="button" name="submit" onclick="tester(this.form.choix)">Click Me!</button> 
 </form>
 
 <div id="text" onclick="tester();">Ici, sera la correction</div>
@@ -79,7 +79,7 @@ function tester(choix)// une fonction que l'on appellera pour tester le formulai
      
  }else if (choix[1].checked || choix[2].checked )
  {
-        modifierText("Bad!");
+    modifierText("Bad!");
      
  }else {
     alert("wat");
