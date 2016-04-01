@@ -60,9 +60,38 @@
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
 
 <form name="QCM">
-<input type="radio" name="choix1" value="goal"/>
-<input type="radio" name="choix2" value="goal"/>
+<input type="radio" name="choix" value="rep1"/> reponse 1 </br>
+<input type="radio" name="choix" value="rep2"/> reponse 2 </br>
+<input type="radio" name="choix" value="rep3"/> reponse 3 </br>
+ <button type="button" name="submit" onclick="tester(this.form.choix)">Click Me!</button> 
 </form>
+
+<div id="text" onclick="tester();">Ici, sera la correction</div>
+ 
+<script type="text/javaScript">
+ 
+function modifierText(texte)//dans le paramètre texte, tu mettre la chaine de caractère à afficher
+{
+    document.getElementById("text").innerHTML = texte; // "text" étant l'id te ta balise qui contient le texte.
+}
+ 
+function tester(choix)// une fonction que l'on appellera pour tester le formulaire
+{
+ if (choix[0].checked)
+ { 
+    modifierText("Good!");
+     
+ }else if (choix[1].checked || choix[2].checked )
+ {
+    modifierText("Bad!");
+     
+ }else {
+    alert("wat");
+ };
+ return false;
+}
+ 
+</script>
 
 <h3>
 <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
