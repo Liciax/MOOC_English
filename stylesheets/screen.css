@@ -287,6 +287,11 @@ span.banner-fix {
   top: 19px;
 }
 
+a#retour-acc {
+  color: white;
+  text-decoration: none;
+}
+
 section#main_content {
   z-index: 2;
   padding: 20px 0px 50px;
