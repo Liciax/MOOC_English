@@ -105,8 +105,8 @@ ol li#liste-part a#add-part {
   font-family: 'Open Sans';
   font-style: italic;
   font-size: 1.02em;
-  padding: 4px 5px;
-  margin: 4px 0px;
+  padding: 4px 5px 4px 50px;
+  margin: 4px 25px 4px 0px;
 }
 ol li#liste-part a#add-part:hover {
   background-color:#CD596B;
