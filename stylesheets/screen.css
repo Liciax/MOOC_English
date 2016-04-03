@@ -91,7 +91,27 @@ body {
 }
 ol, ul {
   list-style: none;
+  padding: 0;
 }
+ol li#liste-part {
+    display: block;
+}
+
+ol li#liste-part a#add-part {
+  display: block;
+  background-color: #7C334F;
+  color: white;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-size: 1.02em;
+  padding: 4px 5px;
+  margin: 4px 0px;
+}
+ol li#liste-part a#add-part:hover {
+  background-color:#CD596B;
+}
+
 blockquote, q {
   quotes: none;
 }
