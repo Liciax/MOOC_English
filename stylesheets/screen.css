@@ -112,6 +112,51 @@ ol li#liste-part a#add-part:hover {
   background-color:#CD596B;
 }
 
+#marqueur {
+ position:relative;
+}
+#marqueur-r {
+ position:absolute;
+ top:0;
+ right:0;
+ width:300px;
+}
+#marqueur-l {
+ position:absolute;
+ top:0;
+ left:0;
+ width:300px;
+}
+a#tourner-page-droite {
+  display: inline-block;
+  background-color: #5B7F98;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-size: 1.02em;
+  border-radius: 0px 10px 10px 0px;
+  padding: 3px 8px 3px 10px;
+  margin: 4px 5px 4px 0px;
+  width: 300px;
+}
+
+a#tourner-page-gauche {
+  display: inline-block;
+  background-color: #5B7F98;
+  color: white;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  text-align: center;
+  font-style: italic;
+  font-size: 1.02em;
+  border-radius: 10px 0px 0px 10px;
+  padding: 3px 8px 3px 10px;
+  margin: 4px 5px 4px 0px;
+  width: 300px;
+}
+
 blockquote, q {
   quotes: none;
 }
