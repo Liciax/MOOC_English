@@ -54,10 +54,10 @@
 <h4>Question 1</h4>
 <p>What does this code? <br/><pre><code>alert('Hello, World!') </code></pre> </p>
 <form name="QCM">
-<input type="radio" name="choix" value="rep1"/> Open a pop-up </br>
-<input type="radio" name="choix" value="rep2"/> Ask a sentence </br>
-<input type="radio" name="choix" value="rep3"/> Open a new window </br>
- <button type="button" name="submit" onclick="tester(this.form.choix)">Click Me!</button> 
+<input type="radio" name="choix1" value="rep1"/> Open a pop-up </br>
+<input type="radio" name="choix1" value="rep2"/> Ask a sentence </br>
+<input type="radio" name="choix1" value="rep3"/> Open a new window </br>
+ <button type="button" name="submit" onclick="tester(this.form.choix1)">Click Me!</button> 
 </form>
 
 <div id="text1" onclick="tester();">Ici, sera la correction</div>
@@ -66,11 +66,11 @@
 
 <p>Witch type variable does not exist? </p>
 <form name="QCM">
-<input type="radio" name="choix" value="rep3"/> Boolean </br>
-<input type="radio" name="choix" value="rep2"/> Number </br>
-<input type="radio" name="choix" value="rep3"/> String </br>
-<input type="radio" name="choix" value="rep4"/> Phrase </br>
- <button type="button" name="submit" onclick="tester2(this.form.choix)">Click Me!</button> 
+<input type="radio" name="choix2" value="rep1"/> Boolean </br>
+<input type="radio" name="choix2" value="rep2"/> Number </br>
+<input type="radio" name="choix2" value="rep3"/> String </br>
+<input type="radio" name="choix2" value="rep4"/> Phrase </br>
+ <button type="button" name="submit" onclick="tester2(this.form.choix2)">Click Me!</button> 
 </form>
 
 <div id="text2" onclick="tester();">Ici, sera la correction</div>
@@ -93,7 +93,7 @@ function tester(choix)// une fonction que l'on appellera pour tester le formulai
     modifierText1("Bad!");
      
  }else {
-    alert("Choose a awnser");
+    alert("Choose a answer");
  };
  return false;
 }
@@ -107,16 +107,16 @@ function modifierText2(texte)//dans le paramètre texte, tu mettre la chaine de 
 
 function tester2(choix)// une fonction que l'on appellera pour tester le formulaire
 {
- if (choix[4].checked)
+ if (choix[3].checked)
  { 
     modifierText2("Good!");
      
- }else if (choix[1].checked || choix[2].checked || choix[0].checked )
+ }else if (choix[2].checked || choix[1].checked || choix[0].checked )
  {
     modifierText2("Bad!");
      
  }else {
-    alert("Choose a awnser");
+    alert("Choose a answer");
  };
  return false;
 }
