@@ -50,7 +50,7 @@
       <section id="main_content">
         <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Exercices</h3>
-
+<h4>Question 1</h4>
 <p>What does this code? <br/><pre><code>alert('Hello, World!') </code></pre> </p>
 <form name="QCM">
 <input type="radio" name="choix" value="rep1"/> Open a pop-up </br>
@@ -83,8 +83,41 @@ function tester(choix)// une fonction que l'on appellera pour tester le formulai
  };
  return false;
 }
+<h4>Question 2</h4>
 
+<p>Witch type variable does not exist? </p>
+<form name="QCM">
+<input type="radio" name="choix" value="rep1"/> Boolean </br>
+<input type="radio" name="choix" value="rep2"/> Number </br>
+<input type="radio" name="choix" value="rep3"/> String </br>
+<input type="radio" name="choix" value="rep4"/> Phrase </br>
+ <button type="button" name="submit" onclick="tester(this.form.choix)">Click Me!</button> 
+</form>
 
+<div id="text" onclick="tester();">Ici, sera la correction</div>
+ 
+<script type="text/javaScript">
+ 
+function modifierText(texte)//dans le paramètre texte, tu mettre la chaine de caractère à afficher
+{
+    document.getElementById("text").innerHTML = texte; // "text" étant l'id te ta balise qui contient le texte.
+}
+ 
+function tester(choix)// une fonction que l'on appellera pour tester le formulaire
+{
+ if (choix[4].checked)
+ { 
+    modifierText("Good!");
+     
+ }else if (choix[1].checked || choix[2].checked || choix[0].checked )
+ {
+    modifierText("Bad!");
+     
+ }else {
+    alert("Choose a awnser");
+ };
+ return false;
+}
 
 
 
