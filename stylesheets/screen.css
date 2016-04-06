@@ -141,7 +141,6 @@ a#tourner-page-droite {
   margin: 4px 5px 4px 0px;
   width: 300px;
 }
-
 a#tourner-page-gauche {
   display: inline-block;
   background-color: #5B7F98;
@@ -155,6 +154,9 @@ a#tourner-page-gauche {
   padding: 3px 8px 3px 10px;
   margin: 4px 5px 4px 0px;
   width: 300px;
+}
+a#tourner-page-gauche:hover, a#tourner-page-droite:hover {
+  background-color: #417090;
 }
 
 blockquote, q {
