@@ -60,21 +60,8 @@
  <button type="button" name="submit" onclick="tester(this.form.choix1)">Click Me!</button> 
 </form>
 
-<div id="text1" onclick="tester();">Ici, sera la correction</div>
+<div id="text1">Ici, sera la correction</div>
 
-<h4>Question 2</h4>
-
-<p>Witch type variable does not exist? </p>
-<form name="QCM">
-<input type="radio" name="choix2" value="rep1"/> Boolean </br>
-<input type="radio" name="choix2" value="rep2"/> Number </br>
-<input type="radio" name="choix2" value="rep3"/> String </br>
-<input type="radio" name="choix2" value="rep4"/> Phrase </br>
- <button type="button" name="submit" onclick="tester2(this.form.choix2)">Click Me!</button> 
-</form>
-
-<div id="text2" onclick="tester();">Ici, sera la correction</div>
- 
 <script type="text/javaScript">
  
 function modifierText1(texte)//dans le paramètre texte, tu mettre la chaine de caractère à afficher
@@ -97,13 +84,28 @@ function tester(choix)// une fonction que l'on appellera pour tester le formulai
  };
  return false;
 }
+</script>
 
+
+<h4>Question 2</h4>
+
+<p>Witch type variable does not exist? </p>
+<form name="QCM">
+<input type="radio" name="choix2" value="rep1"/> Boolean </br>
+<input type="radio" name="choix2" value="rep2"/> Number </br>
+<input type="radio" name="choix2" value="rep3"/> String </br>
+<input type="radio" name="choix2" value="rep4"/> Phrase </br>
+ <button type="button" name="submit" onclick="tester2(this.form.choix2)">Click Me!</button> 
+</form>
+
+<div id="text2">Ici, sera la correction</div>
+ 
+<script type="text/javaScript">
 
 function modifierText2(texte)//dans le paramètre texte, tu mettre la chaine de caractère à afficher
 {
     document.getElementById("text2").innerHTML = texte; // "text" étant l'id te ta balise qui contient le texte.
 }
-
 
 function tester2(choix)// une fonction que l'on appellera pour tester le formulaire
 {
