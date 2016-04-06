@@ -71,11 +71,11 @@ function modifierText1(texte)//dans le paramètre texte, tu mettre la chaine de 
  
 function tester(choix)// une fonction que l'on appellera pour tester le formulaire
 {
- if (choix[1].checked)
+ if (choix[0].checked)
  { 
     modifierText1("Good!");
      
- }else if (choix[0].checked || choix[2].checked )
+ }else if (choix[1].checked || choix[2].checked )
  {
     modifierText1("Bad!");
      
@@ -116,6 +116,82 @@ function tester2(choix)// une fonction que l'on appellera pour tester le formula
  }else if (choix[2].checked || choix[1].checked || choix[0].checked )
  {
     modifierText2("Bad!");
+     
+ }else {
+    alert("Choose a answer");
+ };
+ return false;
+}
+
+</script>
+<h4>Question 3</h4>
+
+<p>What is a variable?</p>
+<form name="QCM">
+<input type="radio" name="choix3" value="rep1"/> A "box" who can stock some informations  </br>
+<input type="radio" name="choix3" value="rep2"/> A "box" who can stock just one information </br>
+<input type="radio" name="choix3" value="rep3"/> A number in JavaScript </br>
+ <button type="button" name="submit" onclick="tester3(this.form.choix3)">Click Me!</button> 
+</form>
+
+<div id="text3">Ici, sera la correction</div>
+ 
+<script type="text/javaScript">
+
+function modifierText3(texte)//dans le paramètre texte, tu mettre la chaine de caractère à afficher
+{
+    document.getElementById("text3").innerHTML = texte; // "text" étant l'id te ta balise qui contient le texte.
+}
+
+function tester3(choix)// une fonction que l'on appellera pour tester le formulaire
+{
+ if (choix[0].checked)
+ { 
+    modifierText3("Good!");
+     
+ }else if (choix[2].checked || choix[1].checked )
+ {
+    modifierText3("Bad!");
+     
+ }else {
+    alert("Choose a answer");
+ };
+ return false;
+}
+
+</script>
+<h4>Question 4</h4>
+
+<p>What is the return value if the user enter 10? <pre><code>var x = Number(prompt("Put a number :"));
+var but = x * 3 - 1;
+but += 5;
+console.log(but);</code></pre></p>
+<form name="QCM">
+<input type="radio" name="choix4" value="rep1"/> 24  </br>
+<input type="radio" name="choix4" value="rep2"/> 34 </br>
+<input type="radio" name="choix4" value="rep3"/> 4 </br>
+<input type="radio" name="choix4" value="rep4"/> Undefined </br>
+ <button type="button" name="submit" onclick="tester4(this.form.choix4)">Click Me!</button> 
+</form>
+
+<div id="text4">Ici, sera la correction</div>
+ 
+<script type="text/javaScript">
+
+function modifierText4(texte)//dans le paramètre texte, tu mettre la chaine de caractère à afficher
+{
+    document.getElementById("text4").innerHTML = texte; // "text" étant l'id te ta balise qui contient le texte.
+}
+
+function tester4(choix)// une fonction que l'on appellera pour tester le formulaire
+{
+ if (choix[0].checked)
+ { 
+    modifierText4("Good!");
+     
+ }else if (choix[2].checked || choix[1].checked )
+ {
+    modifierText4("Bad!");
      
  }else {
     alert("Choose a answer");
