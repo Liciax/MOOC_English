@@ -49,12 +49,51 @@
 
       <section id="main_content">
         <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Part 6 - Repeating structure</h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Part 6 - Loop structure</h3>
 
 <h4 id="part1">1 - While loop</h4>
+<p>It is sometimes necessary to perform a part of the algorithm several times, then used a repetitive structure.</p>
+
+<p>This is the syntax of the while loop :</p>
+<pre>
+<code><u>while</u> (boolean expression) <u>do</u>
+  instructions;
+<u>end while</u></code>
+</pre>
+
+<img src="images/while.png" alt="schemawhile" style="width:220px;height:220px;">
+
+<p>You need to be aware of this points below when you use loops :</p>
+
+ <ul>
+  <li>Check that the algorithm finishes (loop exit).</li>
+  <li>It is necessary that the Boolean expression can be calculated before the structure "while".</li>
+  <li>It is necessary that the Boolean expression is modified by the instruction list and may become wrong for avoid the infinite loop.</li>
+</ul> 
+
 
 <h4 id="part2">2 - For loop</h4>
 
+<p>This loop is an other loop which use a counter. A counter is incremented by 1 at every turn and takes all values between a start value and an ending value.  It must not be changed in the loop.</p>
+
+<p>This is the syntax of the for loop :</p>
+<pre>
+<code><u>for</u> counter <u>from</u> start value <u>to</u> ending value <u>do</u>
+  instructions;
+<u>end for</u></code>
+</pre>
+
+<img src="images/for.png" alt="schemawhile" style="width:220px;height:220px;">
+
+
+<p><strong>Note : </strong></p>
+<p>It is also possible to add conditional structure inside loops and the same is true in the other way.</p>
+<p>How to choose a loop ?</p>
+ <ul>
+  <li>We know in advance the number of iterations → for loop</li>
+  <li>Otherwise if you are not sure → while loop</li>
+</ul> 
+<!--
 <iframe width="670" height="415" align="middle" src="https://www.youtube.com/embed/_90IMRfvefY" frameborder="0" allowfullscreen></iframe>
 
 
@@ -91,11 +130,11 @@ function tester(choix)// une fonction que l'on appellera pour tester le formulai
 }
  
 </script>
-
+-->
 <div id="marqueur">
 <div id="marqueur-l"><a id="tourner-page-gauche" class="anchor" href="https://liciax.github.io/MOOC_English/chapter5.html">Part 5 - Conditional structure</a>
 </div>
-<div id="marqueur-r"><a id="tourner-page-droite" class="anchor" href="https://liciax.github.io/MOOC_English/exercices.html">exercices</a></div>
+<div id="marqueur-r"><a id="tourner-page-droite" class="anchor" href="https://liciax.github.io/MOOC_English/exercices.html">Exercices</a></div>
 </div>
 
       </section>
