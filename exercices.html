@@ -60,7 +60,7 @@
  <button type="button" name="submit" onclick="tester(this.form.choix1)">Click Me!</button> 
 </form>
 
-<div id="text1">Ici, sera la correction</div>
+<div id="text1">Here, the correction</div>
 
 <script type="text/javaScript">
  
@@ -98,7 +98,7 @@ function tester(choix)// une fonction que l'on appellera pour tester le formulai
  <button type="button" name="submit" onclick="tester2(this.form.choix2)">Click Me!</button> 
 </form>
 
-<div id="text2">Ici, sera la correction</div>
+<div id="text2">Here, the correction</div>
  
 <script type="text/javaScript">
 
@@ -134,7 +134,7 @@ function tester2(choix)// une fonction que l'on appellera pour tester le formula
  <button type="button" name="submit" onclick="tester3(this.form.choix3)">Click Me!</button> 
 </form>
 
-<div id="text3">Ici, sera la correction</div>
+<div id="text3">Here, the correction</div>
  
 <script type="text/javaScript">
 
@@ -174,7 +174,7 @@ console.log(but);</code></pre></p>
  <button type="button" name="submit" onclick="tester4(this.form.choix4)">Click Me!</button> 
 </form>
 
-<div id="text4">Ici, sera la correction</div>
+<div id="text4">Here, the correction</div>
  
 <script type="text/javaScript">
 
@@ -185,11 +185,11 @@ function modifierText4(texte)//dans le paramètre texte, tu mettre la chaine de 
 
 function tester4(choix)// une fonction que l'on appellera pour tester le formulaire
 {
- if (choix[0].checked)
+ if (choix[1].checked)
  { 
     modifierText4("Good!");
      
- }else if (choix[2].checked || choix[1].checked )
+ }else if (choix[0].checked || choix[3].checked || choix[2].checked )
  {
     modifierText4("Bad!");
      
@@ -201,6 +201,232 @@ function tester4(choix)// une fonction que l'on appellera pour tester le formula
 
 </script>
 
+<h4>Question 5</h4>
+
+<p>What is the return value if the user enter 10? <pre><code>var x = Number(prompt("Put a number :"));
+ 
+if (x <= 10) {
+   if (x >= 5) {
+       console.log("A");
+   }
+   console.log("B");
+} else {
+   console.log("C");
+}</code></pre></p>
+<form name="QCM">
+<input type="radio" name="choix5" value="rep1"/> "A"  </br>
+<input type="radio" name="choix5" value="rep2"/> "B" </br>
+<input type="radio" name="choix5" value="rep3"/> "C" </br>
+<input type="radio" name="choix5" value="rep4"/> "A" and "B" </br>
+ <button type="button" name="submit" onclick="tester5(this.form.choix5)">Click Me!</button> 
+</form>
+
+<div id="text5">Here, the correction</div>
+ 
+<script type="text/javaScript">
+
+function modifierText5(texte)//dans le paramètre texte, tu mettre la chaine de caractère à afficher
+{
+    document.getElementById("text5").innerHTML = texte; // "text" étant l'id te ta balise qui contient le texte.
+}
+
+function tester5(choix)// une fonction que l'on appellera pour tester le formulaire
+{
+ if (choix[3].checked)
+ { 
+    modifierText5("Good!");
+     
+ }else if (choix[0].checked || choix[1].checked || choix[2].checked )
+ {
+    modifierText5("Bad!");
+     
+ }else {
+    alert("Choose a answer");
+ };
+ return false;
+}
+
+</script>
+
+<h4>Question 5</h4>
+
+<p>What is the return value if the user enter 10? <pre><code>var x = Number(prompt("Put a number :"));
+ 
+if (x <= 10) {
+   if (x >= 5) {
+       console.log("A");
+   }
+   console.log("B");
+} else {
+   console.log("C");
+}</code></pre></p>
+<form name="QCM">
+<input type="radio" name="choix5" value="rep1"/> "A"  </br>
+<input type="radio" name="choix5" value="rep2"/> "B" </br>
+<input type="radio" name="choix5" value="rep3"/> "C" </br>
+<input type="radio" name="choix5" value="rep4"/> "A" and "B" </br>
+ <button type="button" name="submit" onclick="tester5(this.form.choix5)">Click Me!</button> 
+</form>
+
+<div id="text5">Here, the correction</div>
+ 
+<script type="text/javaScript">
+
+function modifierText5(texte)//dans le paramètre texte, tu mettre la chaine de caractère à afficher
+{
+    document.getElementById("text5").innerHTML = texte; // "text" étant l'id te ta balise qui contient le texte.
+}
+
+function tester5(choix)// une fonction que l'on appellera pour tester le formulaire
+{
+ if (choix[3].checked)
+ { 
+    modifierText5("Good!");
+     
+ }else if (choix[0].checked || choix[1].checked || choix[2].checked )
+ {
+    modifierText5("Bad!");
+     
+ }else {
+    alert("Choose a answer");
+ };
+ return false;
+}
+
+</script>
+
+
+<h4>Question 6</h4>
+
+<p>What is the return value if the user enter 10? <pre><code>var nb1 = Number(prompt("Enter the nomber 1 :"));
+var nb2 = Number(prompt("Enter the nomber 2 :"));
+ 
+if ((nb1 < 0) ??? (nb2 < 0)) {
+   console.log("Au moins un des deux nombres est négatif");
+} else {
+   console.log("Les deux nombres sont positifs ou nuls");
+}</code></pre></p>
+<form name="QCM">
+<input type="radio" name="choix6" value="rep1"/> && and </br>
+<input type="radio" name="choix6" value="rep2"/> || or </br>
+<input type="radio" name="choix6" value="rep3"/> ! not </br>
+<input type="radio" name="choix6" value="rep4"/> no one </br>
+ <button type="button" name="submit" onclick="tester6(this.form.choix6)">Click Me!</button> 
+</form>
+
+<div id="text6">Here, the correction</div>
+
+ 
+<script type="text/javaScript">
+
+function modifierText6(texte)//dans le paramètre texte, tu mettre la chaine de caractère à afficher
+{
+    document.getElementById("text6").innerHTML = texte; // "text" étant l'id te ta balise qui contient le texte.
+}
+
+function tester6(choix)// une fonction que l'on appellera pour tester le formulaire
+{
+ if (choix[1].checked)
+ { 
+    modifierText6("Good!");
+     
+ }else if (choix[0].checked || choix[3].checked || choix[2].checked )
+ {
+    modifierText6("Bad!");
+     
+ }else {
+    alert("Choose a answer");
+ };
+ return false;
+}
+
+</script>
+
+<h4>Question 7</h4>
+
+<p>How many prompt are we gonna get with this program ? <pre><code>var i = 0;
+while (i <= 4) {
+   console.log("Hello Wolrd !");
+   i++;
+}</code></pre></p>
+<form name="QCM">
+<input type="radio" name="choix7" value="rep1"/> 1 </br>
+<input type="radio" name="choix7" value="rep2"/> 4 </br>
+<input type="radio" name="choix7" value="rep3"/> 5 </br>
+<input type="radio" name="choix7" value="rep4"/> ∞ </br>
+ <button type="button" name="submit" onclick="tester7(this.form.choix7)">Click Me!</button> 
+</form>
+
+<div id="text7">Here, the correction</div>
+
+ 
+<script type="text/javaScript">
+
+function modifierText7(texte)//dans le paramètre texte, tu mettre la chaine de caractère à afficher
+{
+    document.getElementById("text7").innerHTML = texte; // "text" étant l'id te ta balise qui contient le texte.
+}
+
+function tester7(choix)// une fonction que l'on appellera pour tester le formulaire
+{
+ if (choix[2].checked)
+ { 
+    modifierText7("Good!");
+     
+ }else if (choix[0].checked || choix[1].checked || choix[3].checked )
+ {
+    modifierText7("Bad!");
+     
+ }else {
+    alert("Choose a answer");
+ };
+ return false;
+}
+
+</script>
+
+</script>
+
+<h4>Question 8</h4>
+
+<p>How many prompt are we gonna get with this program ? <pre><code>for (var i = 1; i < 5; i++) {
+   console.log("J'ai faim !");
+}</code></pre></p>
+<form name="QCM">
+<input type="radio" name="choix8" value="rep1"/> 1 </br>
+<input type="radio" name="choix8" value="rep2"/> 4 </br>
+<input type="radio" name="choix8" value="rep3"/> 5 </br>
+<input type="radio" name="choix8" value="rep4"/> ∞ </br>
+ <button type="button" name="submit" onclick="tester8(this.form.choix8)">Click Me!</button> 
+</form>
+
+<div id="text8">Here, the correction</div>
+
+ 
+<script type="text/javaScript">
+
+function modifierText8(texte)//dans le paramètre texte, tu mettre la chaine de caractère à afficher
+{
+    document.getElementById("text8").innerHTML = texte; // "text" étant l'id te ta balise qui contient le texte.
+}
+
+function tester8(choix)// une fonction que l'on appellera pour tester le formulaire
+{
+ if (choix[1].checked)
+ { 
+    modifierText8("Good!");
+     
+ }else if (choix[0].checked || choix[3].checked || choix[2].checked )
+ {
+    modifierText7("Bad!");
+     
+ }else {
+    alert("Choose a answer");
+ };
+ return false;
+}
+
+</script>
 
 <div id="marqueur">
 <div id="marqueur-l"><a id="tourner-page-gauche" class="anchor" href="https://liciax.github.io/MOOC_English/chapter5.html">Part 6 - Repeating structure</a>
