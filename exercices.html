@@ -128,8 +128,8 @@ function tester2(choix)// une fonction que l'on appellera pour tester le formula
 
 <p>What is a variable?</p>
 <form name="QCM">
-<input type="radio" name="choix3" value="rep1"/> A "box" who can stock some informations  </br>
-<input type="radio" name="choix3" value="rep2"/> A "box" who can stock just one information </br>
+<input type="radio" name="choix3" value="rep1"/> A "box" that can stock informations multiple time  </br>
+<input type="radio" name="choix3" value="rep2"/> A "box" that can stock information only once </br>
 <input type="radio" name="choix3" value="rep3"/> A number in JavaScript </br>
  <button type="button" name="submit" onclick="tester3(this.form.choix3)">Click Me!</button> 
 </form>
@@ -248,63 +248,16 @@ function tester5(choix)// une fonction que l'on appellera pour tester le formula
 
 </script>
 
-<h4>Question 5</h4>
-
-<p>What is the return value if the user enter 10? <pre><code>var x = Number(prompt("Put a number :"));
- 
-if (x <= 10) {
-   if (x >= 5) {
-       console.log("A");
-   }
-   console.log("B");
-} else {
-   console.log("C");
-}</code></pre></p>
-<form name="QCM">
-<input type="radio" name="choix5" value="rep1"/> "A"  </br>
-<input type="radio" name="choix5" value="rep2"/> "B" </br>
-<input type="radio" name="choix5" value="rep3"/> "C" </br>
-<input type="radio" name="choix5" value="rep4"/> "A" and "B" </br>
- <button type="button" name="submit" onclick="tester5(this.form.choix5)">Click Me!</button> 
-</form>
-
-<div id="text5">Here, the correction</div>
- 
-<script type="text/javaScript">
-
-function modifierText5(texte)//dans le paramètre texte, tu mettre la chaine de caractère à afficher
-{
-    document.getElementById("text5").innerHTML = texte; // "text" étant l'id te ta balise qui contient le texte.
-}
-
-function tester5(choix)// une fonction que l'on appellera pour tester le formulaire
-{
- if (choix[3].checked)
- { 
-    modifierText5("Good!");
-     
- }else if (choix[0].checked || choix[1].checked || choix[2].checked )
- {
-    modifierText5("Bad!");
-     
- }else {
-    alert("Choose a answer");
- };
- return false;
-}
-
-</script>
-
 
 <h4>Question 6</h4>
 
-<p>What is the return value if the user enter 10? <pre><code>var nb1 = Number(prompt("Enter the nomber 1 :"));
+<p>Witch symymbol should be use instead of ??? so what the result is still coherent ? <pre><code>var nb1 = Number(prompt("Enter the nomber 1 :"));
 var nb2 = Number(prompt("Enter the nomber 2 :"));
  
 if ((nb1 < 0) ??? (nb2 < 0)) {
-   console.log("Au moins un des deux nombres est négatif");
+   console.log("At least one of two number is negative");
 } else {
-   console.log("Les deux nombres sont positifs ou nuls");
+   console.log("Both number are negetive or null");
 }</code></pre></p>
 <form name="QCM">
 <input type="radio" name="choix6" value="rep1"/> && and </br>
