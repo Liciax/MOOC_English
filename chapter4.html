@@ -37,7 +37,7 @@
 
       <section id="downloads">
         <span class="inner">
-          <a href="https://github.com/Liciax/MOOC_English/zipball/master" class="zip"><em>download</em> .ZIP</a>
+          <a href="https://liciax.github.io/MOOC_English/exercices.html" class="zip"><em>test your</em> Skill</a>
           <a href="https://jsbin.com/todubivufu/1/edit?js,output" target="_blank" class="tgz"><em>Write</em> code</a>
         </span>
       </section>
@@ -51,46 +51,87 @@
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Part 4 - Boolean logic</h3>
 
 <h4 id="part1">1 - Logical operators</h4>
+<p>The boolean type variables may contain as value "true" of "false". This value can be the result of a expression. A expression is a value, or a variable name, or is an operator applied to values or variable names.</p>
+
+<p>The comparison operators are : <code><</code>, <code>></code>, <code>=</code>, <code><=</code>, <code>>=</code>, <code>!=</code></p>
 
 <h4 id="part2">2 - Truth tables</h4>
-<!--
-<iframe width="670" height="415" align="middle" src="https://www.youtube.com/embed/_90IMRfvefY" frameborder="0" allowfullscreen></iframe>
+
+<p>This is the results of the most common boolean expression that you need to know (no, and, or).</p>
+
+ <table border="1" style="width:100%; text-align:center">
+  <tr>
+    <td><strong>A</strong></td>
+    <td><strong>no(A)</strong></td>
+  </tr>
+  <tr>
+    <td style="color:#0EC81B">True</td>
+    <td style="color:#E30008">False</td>
+  </tr>
+  <tr>
+    <td style="color:#E30008">False</td>
+    <td style="color:#0EC81B">True</td>
+  </tr>
+</table> 
 
 
-<form name="QCM">
-<input type="radio" name="choix" value="rep1"/> reponse 1 </br>
-<input type="radio" name="choix" value="rep2"/> reponse 2 </br>
-<input type="radio" name="choix" value="rep3"/> reponse 3 </br>
- <button type="button" name="submit" onclick="tester(this.form.choix)">Click Me!</button> 
-</form>
+<table border="1" style="width:100%; text-align:center">
+  <tr>
+    <td><strong>A</strong></td>
+    <td><strong>B</strong></td>
+    <td><strong>A and B</strong></td>
+  </tr>
+  <tr>
+    <td style="color:#0EC81B">True</td>
+    <td style="color:#0EC81B">True</td>
+    <td style="color:#0EC81B">True</td>
+  </tr>
+  <tr>
+    <td style="color:#0EC81B">True</td>
+    <td style="color:#E30008">False</td>
+    <td style="color:#E30008">False</td>
+  </tr>
+  <tr>
+    <td style="color:#E30008">False</td>
+    <td style="color:#0EC81B">True</td>
+    <td style="color:#E30008">False</td>
+  </tr>
+  <tr>
+    <td style="color:#E30008">False</td>
+    <td style="color:#E30008">False</td>
+    <td style="color:#E30008">False</td>
+  </tr>
+</table>
 
-<div id="text" onclick="tester();">Ici, sera la correction</div>
- 
-<script type="text/javaScript">
- 
-function modifierText(texte)//dans le paramètre texte, tu mettre la chaine de caractère à afficher
-{
-    document.getElementById("text").innerHTML = texte; // "text" étant l'id te ta balise qui contient le texte.
-}
- 
-function tester(choix)// une fonction que l'on appellera pour tester le formulaire
-{
- if (choix[0].checked)
- { 
-    modifierText("Good!");
-     
- }else if (choix[1].checked || choix[2].checked )
- {
-    modifierText("Bad!");
-     
- }else {
-    alert("wat");
- };
- return false;
-}
- 
-</script>
--->
+<table border="1" style="width:100%; text-align:center">
+  <tr>
+    <td><strong>A</strong></td>
+    <td><strong>B</strong></td>
+    <td><strong>A or B</strong></td>
+  </tr>
+  <tr>
+    <td style="color:#0EC81B">True</td>
+    <td style="color:#0EC81B">True</td>
+    <td style="color:#0EC81B">True</td>
+  </tr>
+  <tr>
+    <td style="color:#0EC81B">True</td>
+    <td style="color:#E30008">False</td>
+    <td style="color:#0EC81B">True</td>
+  </tr>
+  <tr>
+    <td style="color:#E30008">False</td>
+    <td style="color:#0EC81B">True</td>
+    <td style="color:#0EC81B">True</td>
+  </tr>
+  <tr>
+    <td style="color:#E30008">False</td>
+    <td style="color:#E30008">False</td>
+    <td style="color:#E30008">False</td>
+  </tr>
+</table> 
+
+
 <div id="marqueur">
 <div id="marqueur-l"><a id="tourner-page-gauche" class="anchor" href="https://liciax.github.io/MOOC_English/chapter3.html">Part 3 - Introduction to variable and type</a>
 </div>
