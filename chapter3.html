@@ -69,7 +69,7 @@ console.log("a");</code></pre>
 <p>this will write the word "a" 4 times in a row no matter what. Now let's have a look at variables.</p>
 
 <h4 id="part1">1 - What are variables and how to use them</h4>
-<p>As the name imply, it is a data item that may take on more than one value during the runtime of the program. It is possible to display it multiple times during the program and not have the same result. Think of it as a container: you can put a data in it and at any time you can take it out and put another data in. Let's look at how to use it : first we need to state that we want to make a variable </p>
+<p>As the name imply, it is a data item that may take on more than one value during the runtime of the program. You can give it a name and it is possible to display it multiple times during the program and not have the same result. Think of it as a container: you can put a data in it and at any time you can take it out and put another data in. Let's look at how to use it : first we need to state that we want to make a variable </p>
 <pre><code>var namedvar;
 </code></pre>
 <p>the keyword <u>"var"</u> allows the computer to undersand that we want it to make a variable named "namedvar". There are 3 main types of data : </p>
@@ -82,8 +82,7 @@ console.log("a");</code></pre>
 namevar = 1;
 </code></pre>
 <p>our namedvar now contains the number 1. The corresponding algorithm is : </p>
-<pre>
-<code><u>Algorithm</u> Assign
+<pre><code><u>Algorithm</u> Assign
 
 <u>variables</u> 
   namedvar : number 
@@ -94,8 +93,7 @@ namevar = 1;
 </pre>
 
 <p>We state that we will need a variable namedvar and then we give it the value 1. To write it on the screen, since it's not a sentence, we don't need the quotes around it. Let's try to write it :</p>
-<pre><code>
-var namedvar;
+<pre><code>var namedvar;
 namevar = 1;
 console.log(namedvar);
 console.log(namedvar);
@@ -103,29 +101,22 @@ console.log(namedvar);
 console.log(namedvar);
 </code></pre>
 <p>We get the value 1 writen 4 times... But if we were to change the value of namedvar after the first write :</p>
-<pre>
-<code>
-var namedvar;
+<pre><code>var namedvar;
 namevar = 1;
 console.log(namedvar);
 namevar = 2;
 console.log(namedvar);
 console.log(namedvar);
 console.log(namedvar);
-</code>
-</pre>
+</code></pre>
 <p>We get the value 1 written once, followed by the value 2 written 3 times! With variables, you can keep a value for later and even modify this value.</p>
 <h4 id="part2">2 - Operators</h4>
 
 <p>Now that we have a way to save a value, we can modify it with Operators. Operators are like + or - in mathematics: they take values and they give back the result. If we look a numbers, for example, we have access to most matematical operations (we have + to add 2 numbers, - to substract a number to another...). Let's say we want to know how much 10 + 12 is :</p>
-<pre>
-<code>
-var namedvar;
+<pre><code>var namedvar;
 namevar = 10 + 12;
-
 console.log(namedvar);
-</code>
-</pre>
+</code></pre>
 <p>we get 22! Of course, these Operators may be used on variables :</p>
 <pre>
 <code>
@@ -138,7 +129,22 @@ varfinale = namedvar1 + namedvar2;
 console.log(varfinale);
 </code>
 </pre>
+<p>Let's translate it into an algorithm to understand it : </p> 
+<pre><code><u>Algorithm</u> Addition
 
+<u>variables</u> 
+  namedvar1 : number 
+  namedvar2 : number 
+  varfinale : number 
+
+<u>Beginning</u> 
+  namedvar1 <- 10;
+  namedvar2 <- 12;
+  varfinale <- namedvar1 + namedvar2;
+  Write(varfinale);
+<u>End</u></code>
+</pre>
+<p>We put 2 numbers in two variables, two "containers" and then we take it out of each variables, add them, and put the result in another variables. <b>This does not remove the value from namedvar1 and namedvar2 :</b> we only take a copie of what is inside the variable to work. This mean that you can put a value in a variable and use it without losing it unless you put something else in it's place.</p>
 <div id="marqueur">
 <div id="marqueur-l"><a id="tourner-page-gauche" class="anchor" href="https://liciax.github.io/MOOC_English/chapter2.html">Part 2 - First program "Hello World"</a>
 </div>
