@@ -54,51 +54,25 @@
 <h4 id="part1">1 - What is this program doing ?</h4>
 
 <p>For your first code, we print a message: Hello World. Why Hello World you said? It's a norm in all langage to first with this. So in JavaScript, you need to write that :  
-<br/> alert('Hello, World!') 
+<br/> alert('Hello, World!');
 <br/> alert is the key-word for show a pop up in your web browser.</p>
 
-<p><strong>Note :</strong></p>
-<p>it is important to indent the code to make it readable !<p>
 
-<h4 id="part2">2 - How to run it ?</h4>
+<h4 id="part2">2 - How it's work ?</h4>
 
+<p><strong>The instructions</strong>
+<br/>In algorithmic, for write your program you need write some instructions.
+<pre><code>instruction1;
+instruction2;
+instruction3;</code></pre>
+All this instructions are delimited by ";", and it's very recommend to write one instrution by line. In the same way it is important to indent the code to make it readable. For exemple :
+<pre><code>instruction_1;
+  instruction_1_1;
+  instruction_1_2;
+instruction_2;
+</code></pre>
+</p>
 
-<iframe width="670" height="415" align="middle" src="https://www.youtube.com/embed/_90IMRfvefY" frameborder="0" allowfullscreen></iframe>
-
-<p>What does this code? <br/> alert('Hello, World!') </p>
-<form name="QCM">
-<input type="radio" name="choix" value="rep1"/> Open a pop-up </br>
-<input type="radio" name="choix" value="rep2"/> Ask a sentence </br>
-<input type="radio" name="choix" value="rep3"/> Open a new window </br>
- <button type="button" name="submit" onclick="tester(this.form.choix)">Click Me!</button> 
-</form>
-
-<div id="text" onclick="tester();">Ici, sera la correction</div>
- 
-<script type="text/javaScript">
- 
-function modifierText(texte)//dans le paramètre texte, tu mettre la chaine de caractère à afficher
-{
-    document.getElementById("text").innerHTML = texte; // "text" étant l'id te ta balise qui contient le texte.
-}
- 
-function tester(choix)// une fonction que l'on appellera pour tester le formulaire
-{
- if (choix[0].checked)
- { 
-    modifierText("Good!");
-     
- }else if (choix[1].checked || choix[2].checked )
- {
-    modifierText("Bad!");
-     
- }else {
-    alert("Choose a awnser");
- };
- return false;
-}
- 
-</script>
 
 <div id="marqueur">
 <div id="marqueur-l"><a id="tourner-page-gauche" class="anchor" href="https://liciax.github.io/MOOC_English/chapter1.html">Part 1 - Introduction to computer science</a>

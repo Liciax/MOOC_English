@@ -154,43 +154,6 @@ console.log(varfinale);
 </code>
 </pre>
 
-<iframe width="670" height="415" align="middle" src="https://www.youtube.com/embed/_90IMRfvefY" frameborder="0" allowfullscreen></iframe>
-
-
-<form name="QCM">
-<input type="radio" name="choix" value="rep1"/> reponse 1 </br>
-<input type="radio" name="choix" value="rep2"/> reponse 2 </br>
-<input type="radio" name="choix" value="rep3"/> reponse 3 </br>
- <button type="button" name="submit" onclick="tester(this.form.choix)">Click Me!</button> 
-</form>
-
-<div id="text" onclick="tester();">Ici, sera la correction</div>
- 
-<script type="text/javaScript">
- 
-function modifierText(texte)//dans le paramètre texte, tu mettre la chaine de caractère à afficher
-{
-    document.getElementById("text").innerHTML = texte; // "text" étant l'id te ta balise qui contient le texte.
-}
- 
-function tester(choix)// une fonction que l'on appellera pour tester le formulaire
-{
- if (choix[0].checked)
- { 
-    modifierText("Good!");
-     
- }else if (choix[1].checked || choix[2].checked )
- {
-    modifierText("Bad!");
-     
- }else {
-    console.log("wat");
- };
- return false;
-}
- 
-</script>
-
 <div id="marqueur">
 <div id="marqueur-l"><a id="tourner-page-gauche" class="anchor" href="https://liciax.github.io/MOOC_English/chapter2.html">Part 2 - First program "Hello World"</a>
 </div>
