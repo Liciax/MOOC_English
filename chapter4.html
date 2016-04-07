@@ -49,15 +49,28 @@
       <section id="main_content">
         <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Part 4 - Boolean logic</h3>
+<p>When we have two values, it is possible to compare one with the other. Is the first one bigger than the second one? Is it longer? Are they of the same type? Such a comparaison has an answer : yes or no. In algorithm this answer is a boolean.</p>
 
 <h4 id="part1">1 - Logical operators</h4>
-<p>The boolean type variables may contain as value "true" of "false". This value can be the result of a expression. A expression is a value, or a variable name, or is an operator applied to values or variable names.</p>
+<p>The boolean type variables may contain as value "true" of "false". Is is the answer of a comparaison between two or more values with a comparaison operator.</p>
 
-<p>The comparison operators are : <code><</code>, <code>></code>, <code>=</code>, <code><=</code>, <code>>=</code>, <code>!=</code></p>
+<p>The comparison operators are : <code><</code>, <code>></code>, <code>==</code>, <code><=</code>, <code>>=</code>, <code>!=</code></p>
+<p>with this, we can compare two values and get an answer: "X is bigger than Y" would produce the value "true" if X>Y, or the value "false" otherwise. Let's try it with some code :</p>
+
+<pre><code>console.log(6>3);
+<u>End</u></code></pre>
+
+<p>we can see that this is true: 6 in indeed superior to 3. on the other hand :</p>
+<pre><code>console.log(6==3);
+<u>End</u></code></pre>
+
+<p>is false. Since the symbol "=" is used to assign a value to a variable, the symbol "==" is used to test if two values are equals. Here we can see that 6 equal 3 is false.</p>
 
 <h4 id="part2">2 - Truth tables</h4>
 
-<p>This is the results of the most common boolean expression that you need to know (no, and, or).</p>
+<p>Operation between booleans are not the same as, for example, operation for numbers.</p>
+
+<p>This is the results of the most common boolean expression that you need to know (no, and, or) when they are applied on two booleans and for each of the possible combinaison of value.</p>
 
  <table border="1" style="width:100%; text-align:center">
   <tr>
@@ -131,7 +144,16 @@
   </tr>
 </table> 
 
-
+<p>In JavaScript, these operators are in order: "!A" for no(A), "A && B" for A and B and "A || B" for A or B. So if we look at this code :</p>
+<pre><code>var A;
+var B;
+var result;
+A = true;
+B = false;
+result = A && B;
+console.log(result);
+<u>End</u></code></pre>
+<p>We get a result. Try to predict the result with the table above and change the values of A and B!</p>
 <div id="marqueur">
 <div id="marqueur-l"><a id="tourner-page-gauche" class="anchor" href="https://liciax.github.io/MOOC_English/chapter3.html">Part 3 - Introduction to variable and type</a>
 </div>
