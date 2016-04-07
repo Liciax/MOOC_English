@@ -88,26 +88,56 @@ if (3 <= 2) {
 console.log("Of course not!");
 </code></pre>
 
+<p>When the condition is not met, the piece of code in the if is ignored.</p>
+
 <h4 id="part2">2 - Complex conditional</h4>
 
-<p>This is the syntax of the complex conditional :</p>
+<p>the simple if allows us to execute a piece of code only when a condition is met, but it is possible to execute another piece of code if the condition is not met. Only one of the two pieces of code will be executed depending on the condition.</p>
+<p>This is the syntax of the complex conditional if else :</p>
 <pre>
 <code><u>if</u> (boolean expression) <u>then</u>
-  instructions;                                  
+  instructions 1;                                  
 <u>else</u>
-  instructions;                             
+  instructions 2;                             
 <u>end if</u></code>
 </pre>
 
 <p>and in JavaScript :</p>
 <pre>
 <code>if (boolean expression) {
-  instructions;
+  instructions 1;
 }
 else {
-  instructions;
+  instructions 2;
 }</code>
 </pre>
+
+<p>If the boolean is true, it will execute the instruction 1; on the other hand, if the boolean is false, it will execute the instruction 2. Let's look at a concrete example : </p>
+<pre>
+<code>if (5 > 1) {
+  console.log("5 is bigger than 1");
+}
+else {
+  console.log("5 is smaller than 1");
+}</code>
+</pre>
+
+<p>Let's try something a little bit more complicated: let's combine the code above with variables. Try to guess what it will write before executing it!</p>
+
+<pre>
+<code>var A = 6 + 3;
+var B = 2 + 8;
+console.log("I like");
+if (A > B) {
+  console.log("coconuts");
+}
+else {
+  console.log("oranges");
+}
+console.log("in the morning");</code>
+</pre>
+
+<p>Finally, if you feel adventurous, try to modify the piece of code above so that it substract the smaller variable from the bigger variable! (remember that you can write variables in the console with console.log(X)) </p>
 
 <img src="images/ifelse.png" alt="schemaifelse" style="width:220px;height:220px;">
 <!--
