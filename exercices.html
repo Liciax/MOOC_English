@@ -52,12 +52,12 @@
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Exercices</h3>
 
 <h4>Question 1</h4>
-<p>What does this code? <br/><pre><code>alert('Hello, World!') </code></pre> </p>
+<p>What does this code do? <br/><pre><code>alert("Hello, World!") </code></pre> </p>
 <form name="QCM">
-<input type="radio" name="choix1" value="rep1"/> Open a pop-up </br>
-<input type="radio" name="choix1" value="rep2"/> Ask a sentence </br>
-<input type="radio" name="choix1" value="rep3"/> Open a new window </br>
- <button type="button" name="submit" onclick="tester(this.form.choix1)">Click Me!</button> 
+<input type="radio" name="choix1" value="rep1"/> Open a pop-up saying Hello, World!</br>
+<input type="radio" name="choix1" value="rep2"/> Ask the user to write a sentence</br>
+<input type="radio" name="choix1" value="rep3"/> Open a new window saying Hello, World!</br>
+ <button type="button" name="submit" onclick="tester(this.form.choix1)">Submit</button> 
 </form>
 
 <div id="text1">Here, the correction</div>
@@ -80,7 +80,7 @@ function tester(choix)// une fonction que l'on appellera pour tester le formulai
     modifierText1("Bad!");
      
  }else {
-    alert("Choose a answer");
+    alert("Choose an answer");
  };
  return false;
 }
@@ -89,13 +89,13 @@ function tester(choix)// une fonction que l'on appellera pour tester le formulai
 
 <h4>Question 2</h4>
 
-<p>Witch type variable does not exist? </p>
+<p>Which type of variable does not exist? </p>
 <form name="QCM">
 <input type="radio" name="choix2" value="rep1"/> Boolean </br>
 <input type="radio" name="choix2" value="rep2"/> Number </br>
 <input type="radio" name="choix2" value="rep3"/> String </br>
 <input type="radio" name="choix2" value="rep4"/> Phrase </br>
- <button type="button" name="submit" onclick="tester2(this.form.choix2)">Click Me!</button> 
+ <button type="button" name="submit" onclick="tester2(this.form.choix2)">Submit</button> 
 </form>
 
 <div id="text2">Here, the correction</div>
@@ -118,7 +118,7 @@ function tester2(choix)// une fonction que l'on appellera pour tester le formula
     modifierText2("Bad!");
      
  }else {
-    alert("Choose a answer");
+    alert("Choose an answer");
  };
  return false;
 }
@@ -131,7 +131,7 @@ function tester2(choix)// une fonction que l'on appellera pour tester le formula
 <input type="radio" name="choix3" value="rep1"/> A "box" that can stock informations multiple time  </br>
 <input type="radio" name="choix3" value="rep2"/> A "box" that can stock information only once </br>
 <input type="radio" name="choix3" value="rep3"/> A number in JavaScript </br>
- <button type="button" name="submit" onclick="tester3(this.form.choix3)">Click Me!</button> 
+ <button type="button" name="submit" onclick="tester3(this.form.choix3)">Submit</button> 
 </form>
 
 <div id="text3">Here, the correction</div>
@@ -154,7 +154,7 @@ function tester3(choix)// une fonction que l'on appellera pour tester le formula
     modifierText3("Bad!");
      
  }else {
-    alert("Choose a answer");
+    alert("Choose an answer");
  };
  return false;
 }
@@ -162,7 +162,7 @@ function tester3(choix)// une fonction que l'on appellera pour tester le formula
 </script>
 <h4>Question 4</h4>
 
-<p>What is the return value if the user enter 10? <pre><code>var x = Number(prompt("Put a number :"));
+<p>What is the return value of this program : <pre><code>var x = 10;
 var but = x * 3 - 1;
 but += 5;
 console.log(but);</code></pre></p>
@@ -170,8 +170,8 @@ console.log(but);</code></pre></p>
 <input type="radio" name="choix4" value="rep1"/> 24  </br>
 <input type="radio" name="choix4" value="rep2"/> 34 </br>
 <input type="radio" name="choix4" value="rep3"/> 4 </br>
-<input type="radio" name="choix4" value="rep4"/> Undefined </br>
- <button type="button" name="submit" onclick="tester4(this.form.choix4)">Click Me!</button> 
+<input type="radio" name="choix4" value="rep4"/> nothing </br>
+ <button type="button" name="submit" onclick="tester4(this.form.choix4)">Submit</button> 
 </form>
 
 <div id="text4">Here, the correction</div>
@@ -194,7 +194,7 @@ function tester4(choix)// une fonction que l'on appellera pour tester le formula
     modifierText4("Bad!");
      
  }else {
-    alert("Choose a answer");
+    alert("Choose an answer");
  };
  return false;
 }
@@ -203,7 +203,7 @@ function tester4(choix)// une fonction que l'on appellera pour tester le formula
 
 <h4>Question 5</h4>
 
-<p>What is the return value if the user enter 10? <pre><code>var x = Number(prompt("Put a number :"));
+<p>What is the return value of this code? <pre><code>var x = 10;
  
 if (x <= 10) {
    if (x >= 5) {
@@ -218,7 +218,7 @@ if (x <= 10) {
 <input type="radio" name="choix5" value="rep2"/> "B" </br>
 <input type="radio" name="choix5" value="rep3"/> "C" </br>
 <input type="radio" name="choix5" value="rep4"/> "A" and "B" </br>
- <button type="button" name="submit" onclick="tester5(this.form.choix5)">Click Me!</button> 
+ <button type="button" name="submit" onclick="tester5(this.form.choix5)">Submit</button> 
 </form>
 
 <div id="text5">Here, the correction</div>
@@ -241,7 +241,7 @@ function tester5(choix)// une fonction que l'on appellera pour tester le formula
     modifierText5("Bad!");
      
  }else {
-    alert("Choose a answer");
+    alert("Choose an answer");
  };
  return false;
 }
@@ -251,8 +251,8 @@ function tester5(choix)// une fonction que l'on appellera pour tester le formula
 
 <h4>Question 6</h4>
 
-<p>Witch symbol should be use instead of ??? so what the result is still coherent ? <pre><code>var nb1 = Number(prompt("Enter the nomber 1 :"));
-var nb2 = Number(prompt("Enter the nomber 2 :"));
+<p>Which symbol should be use instead of ??? so what the result is still coherent ? <pre><code>var nb1 = 10;
+var nb2 = 1;
  
 if ((nb1 < 0) ??? (nb2 < 0)) {
    console.log("At least one of two number is negative");
@@ -263,8 +263,8 @@ if ((nb1 < 0) ??? (nb2 < 0)) {
 <input type="radio" name="choix6" value="rep1"/> && and </br>
 <input type="radio" name="choix6" value="rep2"/> || or </br>
 <input type="radio" name="choix6" value="rep3"/> ! not </br>
-<input type="radio" name="choix6" value="rep4"/> no one </br>
- <button type="button" name="submit" onclick="tester6(this.form.choix6)">Click Me!</button> 
+<input type="radio" name="choix6" value="rep4"/> none of the above </br>
+ <button type="button" name="submit" onclick="tester6(this.form.choix6)">Submit</button> 
 </form>
 
 <div id="text6">Here, the correction</div>
@@ -288,7 +288,7 @@ function tester6(choix)// une fonction que l'on appellera pour tester le formula
     modifierText6("Bad!");
      
  }else {
-    alert("Choose a answer");
+    alert("Choose an answer");
  };
  return false;
 }
@@ -297,17 +297,16 @@ function tester6(choix)// une fonction que l'on appellera pour tester le formula
 
 <h4>Question 7</h4>
 
-<p>How many prompt are we gonna get with this program ? <pre><code>var i = 0;
+<p>How many write are we gonna get with this program ? <pre><code>var i = 0;
 while (i <= 4) {
-   console.log("Hello Wolrd !");
-   i++;
+   console.log("Hello World !");
 }</code></pre></p>
 <form name="QCM">
 <input type="radio" name="choix7" value="rep1"/> 1 </br>
 <input type="radio" name="choix7" value="rep2"/> 4 </br>
 <input type="radio" name="choix7" value="rep3"/> 5 </br>
 <input type="radio" name="choix7" value="rep4"/> ∞ </br>
- <button type="button" name="submit" onclick="tester7(this.form.choix7)">Click Me!</button> 
+ <button type="button" name="submit" onclick="tester7(this.form.choix7)">Submit</button> 
 </form>
 
 <div id="text7">Here, the correction</div>
@@ -322,35 +321,34 @@ function modifierText7(texte)//dans le paramètre texte, tu mettre la chaine de 
 
 function tester7(choix)// une fonction que l'on appellera pour tester le formulaire
 {
- if (choix[2].checked)
+ if (choix[3].checked)
  { 
     modifierText7("Good!");
      
- }else if (choix[0].checked || choix[1].checked || choix[3].checked )
+ }else if (choix[0].checked || choix[1].checked || choix[2].checked )
  {
     modifierText7("Bad!");
      
  }else {
-    alert("Choose a answer");
+    alert("Choose an answer");
  };
  return false;
 }
 
 </script>
 
-</script>
 
 <h4>Question 8</h4>
 
 <p>How many prompt are we gonna get with this program ? <pre><code>for (var i = 1; i < 5; i++) {
-   console.log("J'ai faim !");
+   console.log("Hello !");
 }</code></pre></p>
 <form name="QCM">
 <input type="radio" name="choix8" value="rep1"/> 1 </br>
 <input type="radio" name="choix8" value="rep2"/> 4 </br>
 <input type="radio" name="choix8" value="rep3"/> 5 </br>
 <input type="radio" name="choix8" value="rep4"/> ∞ </br>
- <button type="button" name="submit" onclick="tester8(this.form.choix8)">Click Me!</button> 
+ <button type="button" name="submit" onclick="tester8(this.form.choix8)">Submit</button> 
 </form>
 
 <div id="text8">Here, the correction</div>
@@ -371,10 +369,71 @@ function tester8(choix)// une fonction que l'on appellera pour tester le formula
      
  }else if (choix[0].checked || choix[3].checked || choix[2].checked )
  {
-    modifierText7("Bad!");
+    modifierText8("Bad!");
      
  }else {
-    alert("Choose a answer");
+    alert("Choose an answer");
+ };
+ return false;
+}
+
+</script>
+
+<h4>Question 9</h4>
+
+<p>What will this program do ? 
+<pre><code>var X = 1;
+var Y = 5;
+var Z;
+for (var i = 1; i < Y; i++) {
+  Z = "";
+  for(var j = i; j < 5; j++) {
+    Z = Z + " ";
+  }
+  for(var k = 1; k <= X; k++) {
+    Z = Z + "*";
+  }
+  for(var j = i; j < 5; j++) {
+    Z = Z + " ";
+  }
+  X = X + 2;
+  console.log(Z);
+}
+Z = "   ***   ";
+while(X > 1) {
+  console.log(Z);
+  X = X - 2;
+}</code></pre></p>
+<form name="QCM">
+<input type="radio" name="choix9" value="rep1"/> it will loop forever </br>
+<input type="radio" name="choix9" value="rep2"/> it will return 5+4+3+2+1 </br>
+<input type="radio" name="choix9" value="rep3"/> it will draw an arrow </br>
+<input type="radio" name="choix9" value="rep4"/> it will draw a box </br>
+ <button type="button" name="submit" onclick="tester9(this.form.choix9)">Submit</button> 
+</form>
+
+<div id="text8">Here, the correction</div>
+
+ 
+<script type="text/javaScript">
+
+function modifierText8(texte)//dans le paramètre texte, tu mettre la chaine de caractère à afficher
+{
+    document.getElementById("text9").innerHTML = texte; // "text" étant l'id te ta balise qui contient le texte.
+}
+
+function tester9(choix)// une fonction que l'on appellera pour tester le formulaire
+{
+ if (choix[2].checked)
+ { 
+    modifierText9("Good!");
+     
+ }else if (choix[0].checked || choix[3].checked || choix[1].checked )
+ {
+    modifierText9("Bad!");
+     
+ }else {
+    alert("Choose an answer");
  };
  return false;
 }
